@@ -9,3 +9,4 @@ export const writeContacts = async (updatedContacts) => {
     console.error('Помилка запису:', error);
   }
 };
+writeContacts();

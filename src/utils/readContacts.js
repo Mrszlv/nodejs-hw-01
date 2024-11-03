@@ -11,3 +11,4 @@ export const readContacts = async () => {
     return [];
   }
 };
+readContacts();
