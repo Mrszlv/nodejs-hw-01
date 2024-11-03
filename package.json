@@ -8,14 +8,20 @@
     "lint": "eslint src/**/*.js",
     "start": "node ./src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get-all": "node src/scripts/getAllContacts",
+    "generate": "node src/scripts/generateContacts.js",
+    "add-one": "node src/scripts/addOneContact.js",
+    "count": "node src/scripts/countContacts.js",
+    "remove-last": "node src/scripts/removeLastContact.js",
+    "remove-all": "node src/scripts/removeAllContacts.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "@eslint/js": "^9.14.0",
+    "@faker-js/faker": "^9.1.0",
     "eslint": "^9.14.0",
     "globals": "^15.11.0",
     "nodemon": "^3.1.7"
