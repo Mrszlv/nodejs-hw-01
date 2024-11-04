@@ -1,7 +1,7 @@
-import { PATH_DB } from '../constants/contacts.js';
+import { PATH_DB } from '../contacts/contacts';
 import fs from 'node:fs/promises';
 
-export const writeContacts = async (updatedContacts) => {
+const writeContacts = async (updatedContacts) => {
   const contacts = updatedContacts;
   try {
     await fs.writeFile(PATH_DB, JSON.stringify(contacts, null, 2));
@@ -10,3 +10,5 @@ export const writeContacts = async (updatedContacts) => {
   }
 };
 writeContacts();
+
+export default writeContacts;
