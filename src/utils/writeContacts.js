@@ -1,7 +1,7 @@
-import { PATH_DB } from '../contacts/contacts';
+import { PATH_DB } from '../contacts/contacts.js';
 import fs from 'node:fs/promises';
 
-const writeContacts = async (updatedContacts) => {
+export const writeContacts = async (updatedContacts) => {
   const contacts = updatedContacts;
   try {
     await fs.writeFile(PATH_DB, JSON.stringify(contacts, null, 2));
@@ -9,6 +9,3 @@ const writeContacts = async (updatedContacts) => {
     console.error('Помилка запису:', error);
   }
 };
-writeContacts();
-
-export default writeContacts;
