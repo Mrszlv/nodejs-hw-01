@@ -11,4 +11,4 @@ const generateContacts = async (number) => {
   console.log('Generate ok!');
 };
 
-generateContacts(20);
+generateContacts(7);
